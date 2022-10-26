@@ -1,0 +1,24 @@
+WAP to accept number and find the greater number and call garbage function.
+
+import java.util.*;
+public class Garbage_Collection1 {
+	Scanner sc=new Scanner(System.in);
+	int a=sc.nextInt();
+	int b=sc.nextInt();
+	public void finalize(){
+	
+	if(a<b) {
+		System.out.println("The greater number is "+b);
+	}
+	else {
+		System.out.println("The greater number is "+a);
+	}
+}
+
+public static void main(String[] args) {
+	System.out.println("enter the two no :");
+	Garbage_Collection1 e=new Garbage_Collection1();
+	e=null;
+	System.gc();
+}
+}
